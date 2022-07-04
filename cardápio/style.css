@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap');
+
+@font-face {
+    font-family: nhamnham;
+    src: url('./assets/fonts/KGColdCoffee.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("assets/imgs/background.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 60%;
+    min-width: 800px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sanduich {
+    font-family: 'Caveat', cursive;
+    margin-top: 60px;
+    font-size: 20px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.break {
+    height: 100x;
+    width: 70px;
+    margin-left: 0;
+    margin-top: 70px;
+    position: absolute;
+    left: 0;
+    top: 220px;
+}
+
+.bacon {
+    height: 300px;
+    position: absolute;
+    left: -130px;
+    top: -100px;
+}
+
+.sausage {
+    height: 135px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.fries {
+    height: 135px;
+    position: absolute;
+    right: 0;
+    top: 650px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.menu {
+    letter-spacing: 1em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    background-color: #ffa100;
+    text-shadow: 0 0 0.2em rgb(165, 162, 162);
+    margin-top: 5px;
+    height: 45px;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.hamburgers {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: nhamnham;
+    font-size: 70px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.subtitle {
+    background-color: #ffa100;
+    margin-top: 90px;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 0 0 0.2em rgb(165, 162, 162);
+}
+
+.drinksTitle {
+    margin-top: 195px;
+}
+
+.hamburger,
+.drinks {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger>div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.hamburger .title,
+.order {
+    color: #ffa100;
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+.hamburger .ingredients {
+    color: white;
+    font-size: 10px;
+
+}
+
+.ingredients,
+.additional,
+footer,
+.drinks,
+.title .footer {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+.hamburger .price,
+.drinks .price {
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    background-color: #ffa100;
+    border-radius: 5px;
+    height: 50px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.price span:nth-child(1) {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 50px;
+}
+
+.price span:nth-child(2) {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.additional {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.additional span:nth-child(2) {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #ffa100;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.drinks .title {
+    color: white;
+}
+
+.drinks .description {
+    font-size: 15px;
+}
+
+.order {
+    background-color: #ffa100;
+    color: black;
+    height: 80px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 60px;
+    /* margin-right: 100px; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.order-go {
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.order-go span:nth-child(1) {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.motocycle {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
+}
+
+.motocycle img {
+    position: relative;
+    left: -20px;
+}
+
+footer {
+    /* height: 300px; */
+    background-color: #ffa100;
+    color: black;
+    z-index: 2;
+    margin-top: 90px;
+}
+
+.triangle {
+    height: 190px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.hamburgerImg {
+    z-index: 3;
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    margin-bottom: 20px;
+    height: 150px;
+}
