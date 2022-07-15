@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="name">Núbia Almeida</div>
+        <nav class="grow">
+            <span data-select="home" class="selected">Home</span>
+            <span data-select="about-me">Sobre</span>
+            <span data-select="projects">Projetos</span>
+        </nav>
+    </div>
+    <main data-section="home" class="show">
+        <div class="container">
+            <div class="photo-container">
+                <img src="imgs/perfil.jpeg" alt="foto de perfil" />
+            </div>
+
+            <div class="info presentation grow">
+                <p>Olá, Sou Núbia Almeida,</p>
+                <p>Estudante Front-End</p>
+                <p>e Embaixadora da GEDUC</p>
+                <span class="title">01_SOBRE MIM ></span>
+            </div>
+            <div class="photo-container fixed">
+                <img src="imgs/hands_in_hand.webp" alt="foto de mãos dadas" />
+                <span class="title white">02_AÇÃO VOLUNTÁRIA</span>
+            </div>
+        </div>
+        <div class="container reverse">
+            <div class="photo-container">
+                <img src="imgs/recycle.jpg" alt="garrafa de vidro azul com uma planta dentro" />
+                <span class="title white">05_RECICLAGEM</span>
+
+            </div>
+            <div class="grow">
+                <!-- aqui vai ter carroseul -->
+                <span class="title">04_EXPERIÊNCIA</span>
+
+            </div>
+            <div class="photo-container fixed">
+                <img src="imgs/vollunter.jpg" alt="foto de voluntários" />
+                <span class="title white">03_EMBAIXADORA DA EDUCAÇÃO</span>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="info grow">
+                <p class="course">Desenvolvedora Web Front-end com React - CODELAND</p>
+                <span class="course-time">(Abr 2022 - Jun 2022)</span>
+                <hr class="space">
+                <p class="course">Tecnóloga em Recursos Humanos - UNIP</p>
+                <span class="course-time">(Fev 2020 - Jan 2022)</span>
+                <span class="title">06_FORMAÇÃO</span>
+
+            </div>
+            <div class="photo-container">
+                <img src="imgs/cat.jpg" alt="gato de óculos escuro" />
+                <span class="title">07_ACHO GATO MUITO FOFINHO</span>
+            </div>
+            <div class="info fixed skills-container">
+                <ul class="skills">
+                    <li>
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <span>Estratégia De UX/UI</span>
+                    </li>
+
+                    <li>
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <span>Conceito Criativo</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            check_circle
+                        </span>
+                        <span>Conteúdo Social</span>
+                    </li>
+                </ul>
+                <span class="title white">08_APTIDÕES</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photo-container fixed">
+                <img src="imgs/coturno.jpg" alt="perna feminina com os pés calçados com uma bota" />
+                <span class="title white">09_MEU ESTILO</span>
+            </div>
+            <div class="grow info">
+                <p>Entre em contato comigo:</p>
+                <p>nubyalmeida45@gmail.com</p>
+                <span class="title">10_CONTATE-ME</span>
+
+            </div>
+            <div class="photo-container fixed">
+                <img src="imgs/map.jpg" alt="uma mulher dentro de um carro segurando um mapa" />
+                <span class="title white">11_ADORO CONHECER LUGARES NOVOS</span>
+            </div>
+        </div>
+        <div class="container social-media">
+            <span>Facebook</span>
+            <span>Instagram</span>
+            <span>GitHub</span>
+        </div>
+    </main>
+
+    <section data-section="about-me" class="about-me hidden">
+        <span class="title">Sobre mim</span>
+        <p>Sempre estudei e trabalhei, pois vim de família humilde, trabalhar tão cedo me fez entender sobre o que é
+            responsabilidade e me fez amadurecer mais rápido. Gosto muito de estudar, ler livros estilo mistério, adoro
+            fazer poesias, fazer caminhada, cantar em vez em quando, rs </p>
+        <p>Acredito que as pessoas mundam o mundo.</p>
+        <p>Tenho como objetivo, fazer aa área de T.I ser mais humanizada focada em ações sociais.</p>
+    </section>
+    <section data-section="projects" class="projects hidden">
+        <span class="title">Projetos</span>
+        <p></p>
+    </section>
+
+    <footer>
+        © Feito por Núbia Almeida - Que a força esteja com você
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
