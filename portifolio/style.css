@@ -83,7 +83,7 @@ nav span {
 }
 
 .container .fixed {
-    width: 30%;
+    width: 29%;
     overflow: hidden;
 }
 
@@ -167,12 +167,102 @@ footer {
     justify-content: center;
 }
 
-.about-me,
-.projects {
+.about-me {
+    flex-direction: row;
+    padding: 50px 150px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
     flex-direction: column;
-    padding: 50px 200px;
+    padding: 0 50px;
+    width: 50%;
+}
+
+.about-me {
+    background-color: #f2f6f9;
 }
 
 .about-me .title {
-    font-weight: 500;
+    background-color: #e6dace
+}
+
+.about-me .title,
+.column {
+    font-weight: 400;
+    margin: 30px 0px;
+    font-size: 30px
+}
+
+
+.projects {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.projects .title {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 30px;
+    background-color: #e6dace;
+}
+
+.about-me p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.about-me img {
+    border-radius: 30px 60px;
+}
+
+.effect {
+    height: 40px;
+    width: 30px;
+    position: absolute;
+    left: 100px;
+    top: 190px;
+}
+
+.square,
+.triangle {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    right: 80px;
+    top: 600px;
+
+}
+
+.star {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 80px;
+    top: 400px;
+}
+
+.star-two {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    right: 80px;
+    top: 700px;
+}
+
+
+.linha {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: 200px;
+}
+
+.codepen-container {
+    width: 50%;
+    margin: 50px 0px;
 }
