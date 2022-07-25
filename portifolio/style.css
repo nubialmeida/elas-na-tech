@@ -410,7 +410,8 @@ img {
     }
 }
 
-.workplace {
+.workplace,
+.scouts-from-brazil {
     font-style: italic;
     font-weight: 300;
 
@@ -433,24 +434,70 @@ img {
     margin-bottom: 15px;
 }
 
-.mark {
-    background-color: blue;
+mark {
+    background-color: #d8e3e8;
+    ;
 }
 
 .education-ambassador .container {
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
+    padding: 70px 90px;
     background-color: transparent;
 }
 
-.geduc {
-    flex-direction: row;
-    padding: 50px 100px;
-    width: 100%;
+.recycling .container {
+    justify-content: space-between;
+    padding: 70px 90px;
+    background-color: transparent;
 }
 
-.geduc-img {
-    height: 160px;
-    width: 160px;
+.recycling .container>p {
+    width: 30%;
+}
+
+.voluntary-action .container>p {
+    width: 20%;
+}
+
+.voluntary-action .container {
+    justify-content: space-between;
+    padding: 70px 90px;
+    background-color: transparent;
+}
+
+.recycling .container>article {
+    width: 60%;
+}
+
+.voluntary-action .container>article {
+    width: 50%;
+}
+
+.geduc,
+.scouting {
+    flex-direction: row;
+    width: 30%;
+}
+
+.geduc-img,
+.recycling-img {
+    height: 180px;
+    width: 190px;
+}
+
+.recycling-img {
+    margin-right: 50px;
+}
+
+.scouting-img {
+    height: 390px;
+    width: 530px;
+}
+
+.description {
+    font-style: italic;
+}
+
+.description-font {
+    font-weight: 600;
 }
