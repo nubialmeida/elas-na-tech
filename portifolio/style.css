@@ -1,11 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+    --scroll-color: #eee;
+    --scroll-background-color: #ccc;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: #111111;
     font-family: "Poppins", sans-serif;
+}
+
+html {
+    scrollbar-color: var(scrollbarBG) var(--scroll-color);
+}
+
+/*! Other Browser */
+html::-webkit-scrollbar {
+    width: 11px;
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color) var(--scroll-background-color);
+}
+html::-webkit-scrollbar-track {
+    background: var(--scroll-background-color);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);
+    border-radius: 6px;
+    border: 3px solid var(--scroll-background-color);
 }
 
 .body {
@@ -21,6 +47,11 @@ main {
     font-size: 16px;
     overflow-x: hidden;
     border: 0.2rem solid #111111;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
 }
 
 .selected {
@@ -138,7 +169,6 @@ nav span {
 
 .photo-container > img {
     height: 100%;
-    object-fit: cover;
 }
 
 .skills-container {
@@ -164,10 +194,6 @@ nav span {
 
 ul {
     list-style-type: none;
-}
-
-li {
-    color: #fbdca5;
 }
 
 .social-media > span {
@@ -484,6 +510,11 @@ mark {
 
 .scouting-img {
     height: 390px;
+    width: 530px;
+}
+
+.logo-isp {
+    height: auto;
     width: 530px;
 }
 
