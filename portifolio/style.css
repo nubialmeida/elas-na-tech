@@ -54,6 +54,10 @@ section {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
+
 .selected {
     color: #8b7f73;
 }
